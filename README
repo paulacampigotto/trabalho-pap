@@ -1,0 +1,19 @@
+Para executar o servidor:
+$make servidor
+
+Para executar o programa das catracas:
+$make catracas
+
+Para limpar os arquivos gerados:
+$make clean
+
+OBS: pode ocorrer alguns erros ao tentar executar o servidor pela primeira vez, os seguintes procedimentos devem resolver o problema:
+
+-> Digite os comandos do makefile no terminal:
+$export FLASK_APP=run.py
+$flask run
+
+-> Se algum erro de environment persistir, tente:
+$export FLASK_APP=run.py
+$FLASK_ENV=development
+$flask run
