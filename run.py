@@ -46,12 +46,14 @@ def something():
     global retornoTemplate
     return retornoTemplate
 
-@app.route('/getRegisters/nome=<string:nome>&cpf=<string:cpf>&tipo=<string:tipo>', methods=['GET', 'POST'])
+@app.route('/getRegisters/nome=<string:nome>&cpf=<string:cpf>&tipo=<int:tipo>', methods=['GET', 'POST'])
 def req(nome, cpf, tipo):
     global retornoTemplate
     global cont
-    permissao = 'Professor'
-    if(tipo == 2):
+    permissao = ''
+    if(tipo == 1):
+        permissao = 'Professor'
+    elif(tipo == 2):
         permissao = 'Aluno'
     elif(tipo == 3):
         permissao = 'Servidor'
