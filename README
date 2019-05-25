@@ -7,7 +7,7 @@ $make catracas
 Para limpar os arquivos gerados:
 $make clean
 
-OBS: pode ocorrer alguns erros ao tentar executar o servidor pela primeira vez, os seguintes procedimentos devem resolver o problema:
+OBS: podem ocorrer alguns erros ao tentar executar o servidor pela primeira vez, os seguintes procedimentos devem resolver o problema:
 
 -> Digite os comandos do makefile no terminal:
 $export FLASK_APP=run.py
